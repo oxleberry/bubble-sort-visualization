@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.sort-animation {
+  background-color: grey;
+  height: 70vh;
+  margin: 50px 0 0;
+  width: 100%;
+}
+.sort-animation .tile1 {
+  display: inline-block;
+  background-color: #00a0bd;
+}
+.sort-animation .tile2 {
+  display: inline-block;
+  background-color: #00a0bd;
+  height: 80%;
+  width: 10px;
+}
+.sort-animation .tile3 {
+  display: inline-block;
+  background-color: #00a0bd;
+  height: 60%;
+  width: 10px;
+}
+.sort-animation .tile4 {
+  display: inline-block;
+  background-color: #00a0bd;
+  height: 40%;
+  width: 10px;
+}
+.sort-animation .tile5 {
+  display: inline-block;
+  background-color: #00a0bd;
+  height: 20px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
