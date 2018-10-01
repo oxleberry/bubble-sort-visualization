@@ -1,4 +1,5 @@
 
+// Adapted from Coding Train: https://www.youtube.com/watch?v=67k3I2GxTH8
 
 console.log("sanity check :)");
 
@@ -39,6 +40,7 @@ console.log(values);
 //   console.log(values);
 // }
 
+// sorting by 2 positions at a time
 function sorting () {
   for (i = 0; i < sortAmount; i++) {
     for (j = 0; j < sortAmount-i-1 ; j++) {
@@ -54,6 +56,7 @@ function sorting () {
   }
 }
 
+// swapping positions in an array
 function swap (arr, a, b) {
   let temp = arr[a];
   arr[a] = arr[b];
@@ -62,3 +65,18 @@ function swap (arr, a, b) {
 
 sorting ();
 console.log(values);
+
+function redraw () {
+  sortEle.innerHTML = "";  
+  for (let i = 0; i < values.length; i++ ) {
+    let divEle = document.createElement('div');
+    divEle.setAttribute('class', 'tile1');
+    let divHeignt = divEle.style.height = `${values[i]}%`;
+    divEle.style.width = `${1}%`;  
+    console.log(divHeignt);
+    sortEle.appendChild(divEle);  
+  }
+
+}
+
+redraw();
